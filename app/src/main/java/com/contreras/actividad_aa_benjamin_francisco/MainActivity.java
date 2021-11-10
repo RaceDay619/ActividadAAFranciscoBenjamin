@@ -31,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<Libro> array = new DbLibro(getApplicationContext()).getLibros();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        LibroAdapter adapter = new LibroAdapter(array);
+        recyclerView.setAdapter(adapter);
 
     }
     @Override

@@ -35,14 +35,14 @@ public class LibroAdapter extends RecyclerView.Adapter<LibroAdapter.ViewHolder> 
         TextView txtFechaLibro,txtTitulolibro,txtCopiasLib,txtPaginasLibro,txtAutor,txtEditorial,txtEstante, txtDescripcionLibro;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-            txtFechaLibro = itemView.findViewById((R.id.txtFechaLibro));
-            txtTitulolibro = itemView.findViewById((R.id.txtTituloLibro));
+            txtFechaLibro = itemView.findViewById((R.id.txtFechapublicacion));
+            txtTitulolibro = itemView.findViewById((R.id.txtTitulolibro));
             txtCopiasLib = itemView.findViewById((R.id.txtCopiasLib));
-            txtPaginasLibro = itemView.findViewById((R.id.txtPaginasLibro));
+            txtPaginasLibro = itemView.findViewById((R.id.txtPaginaslibro));
             txtAutor = itemView.findViewById((R.id.txtAutor));
             txtEditorial = itemView.findViewById((R.id.txtEditorial));
             txtEstante = itemView.findViewById((R.id.txtEstante));
-            txtDescripcionLibro = itemView.findViewById(R.id.txtDescripcionLibro);
+            txtDescripcionLibro = itemView.findViewById(R.id.txtDescripcion);
         }
 
         public void cargarLibro(Libro l){
@@ -52,7 +52,7 @@ public class LibroAdapter extends RecyclerView.Adapter<LibroAdapter.ViewHolder> 
             txtCopiasLib.setText(String.valueOf(l.getCopias()));
             txtPaginasLibro.setText(String.valueOf(l.getCantidadpaginas()));
             txtAutor.setText(l.getAutor().toString());
-            txtEditorial.setText(l.getAutor().toString());
+            txtEditorial.setText(l.getEditorial().toString());
             txtEstante.setText(l.getEstante().toString());
 
         }
