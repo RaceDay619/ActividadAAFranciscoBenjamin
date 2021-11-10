@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Actividad_AA_Benjamin_Francisco</string>
+    <string name="random1">Libro</string>
+    <string name="random2">Autor</string>
+    <string name="random3">Estantería</string>
+    <string name="random4">Libreria</string>
+    <string name="random5">Agregar libro</string>
+    <string name="random6">Editorial</string>
+    <string name="random7">Estante</string>
+
+</resources>
